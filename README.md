@@ -31,7 +31,7 @@ and how to configure it, see the links below.
 
 * [Gem](http://rubygems.org/gems/acts_as_textcaptcha)
 * [GitHub](https://github.com/matthutchinson/acts_as_textcaptcha)
-* [Travis CI](http://travis-ci.org/#!/matthutchinson/acts_as_textcaptcha)
+* [Travis CI](http://travis-ci.com/matthutchinson/acts_as_textcaptcha)
 * [Code Climate](https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/maintainability)
 * [Test Coverage](https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/test_coverage)
 * [RDoc](http://rdoc.info/projects/matthutchinson/acts_as_textcaptcha)

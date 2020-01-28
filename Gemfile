@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-gem 'acts_as_textcaptcha', '~> 4.5.0'
+gem 'acts_as_textcaptcha', '~> 4.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2.1'
