@@ -1,0 +1,32 @@
+development: &common_settings
+  # use a string to uniquely identify yourself to the API
+  api_key: <%= ENV.fetch('TEXTCAPTCHA_API_IDENTIFIER', 'acts_as_textcaptcha_demo') %>
+  # only allow 2 minutes before captcha cache expires
+  cache_expiry_minutes: 2
+  questions:
+      - question: 'Is ice hot or cold?'
+        answers: 'cold'
+      - question: 'what color is an orange?'
+        answers: 'orange'
+      - question: 'what is two plus 3?'
+        answers: '5,five'
+      - question: 'what is 5 times two?'
+        answers: '10,ten'
+      - question: 'How many colors in the list, green, brown, foot and blue?'
+        answers: '3,three'
+      - question: 'what is Georges name?'
+        answers: 'george'
+      - question: '11 minus 1?'
+        answers: '10,ten'
+      - question: 'is boiling water hot or cold?'
+        answers: 'hot'
+      - question: 'what color is my blue shirt today?'
+        answers: 'blue'
+      - question: 'what is 16 plus 4?'
+        answers: '20,twenty'
+
+test:
+  <<: *common_settings
+
+production:
+  <<: *common_settings

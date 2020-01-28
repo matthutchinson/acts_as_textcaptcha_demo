@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>ActsAsTextcaptcha Demo</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <h1>ActsAsTextcaptcha Demo</h1>
+  <%= image_tag 'captcha_roboto.png' %>
+
+  <p style="color: green"><%= flash['notice'] %></p>
+
+  <%= yield %>
+
+  <div class="badges">
+    <a href="http://rubygems.org/gems/acts_as_textcaptcha"><img src="https://img.shields.io/gem/v/acts_as_textcaptcha.svg?style=flat" alt="Gem" align="absmiddle"/></a>
+    <a href="https://travis-ci.org/matthutchinson/acts_as_textcaptcha"><img src="https://img.shields.io/travis/matthutchinson/acts_as_textcaptcha.svg?style=flat" alt="Travis" align="absmiddle"/></a>
+    <a href="https://depfu.com/github/matthutchinson/acts_as_textcaptcha"><img src="https://img.shields.io/depfu/matthutchinson/acts_as_textcaptcha.svg?style=flat" alt="Depfu" align="absmiddle" /></a>
+    <a href="https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/maintainability"><img src="https://api.codeclimate.com/v1/badges/db61b57be5b466b300ab/maintainability" alt="Maintainability" align="absmiddle" /></a>
+    <a href="https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/test_coverage"><img src="https://api.codeclimate.com/v1/badges/db61b57be5b466b300ab/test_coverage" alt="Test Coverage" align="absmiddle" /></a>
+  </div>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="http://rubygems.org/gems/acts_as_textcaptcha">Gem</a></li>
+    <li><a href="http://github.com/matthutchinson/acts_as_textcaptcha">GitHub</a></li>
+  	<li><a href="http://travis-ci.org/#!/matthutchinson/acts_as_textcaptcha">Travis CI</a></li>
+    <li><a href="https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/maintainability">Maintainability</a></li>
+    <li><a href="https://codeclimate.com/github/matthutchinson/acts_as_textcaptcha/test_coverage">Test Coverage</a></li>
+  	<li><a href="http://rdoc.info/projects/matthutchinson/acts_as_textcaptcha">RDoc</a></li>
+    <li><a href="http://wiki.github.com/matthutchinson/acts_as_textcaptcha/">Wiki</a></li>
+    <li><a href="http://github.com/matthutchinson/acts_as_textcaptcha/issues">Issues</a></li>
+    <li><a href="http://github.com/matthutchinson/acts_as_textcaptcha/issues/new">Report a bug</a></li>
+  </ul>
+
+  <h2>Who&#8217;s who?</h2>
+  <ul>
+    <li><a href="http://github.com/matthutchinson/acts_as_textcaptcha">ActsAsTextcaptcha</a> and <a href="http://www.flickr.com/photos/hiddenloop/4541195635/">little robot drawing</a> by <a href="http://matthewhutchinson.net">Matthew Hutchinson</a></li>
+    <li><a href="http://textcaptcha.com">Text CAPTCHA</a> api and service by <a href="https://twitter.com/robtuley">Rob Tuley</a></li>
+  </ul>
+
+  <hr/>
+  <p><strong>ActsAsTextCaptcha</strong> <%= ActsAsTextcaptcha::VERSION %> gem, running on <strong>Rails</strong> <%= Rails.version %>, <strong>Ruby</strong> <%= "#{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"%></p>
+</body>
+</html>
