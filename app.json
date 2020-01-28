@@ -1,0 +1,30 @@
+{
+  "name": "ActsAsTextcaptcha Demo",
+  "description": "Example Rails app configured to use the acts_as_textcaptcha gem",
+  "repository": "https://github.com/matthutchinson/acts_as_textcaptcha_demo.git",
+  "logo": "https://github.com/matthutchinson/acts_as_textcaptcha_demo/blob/master/app/assets/images/captcha_roboto.png?raw=true",
+  "keywords": ["acts_as_textcaptcha", "rails", "gem"],
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
+  "env": {
+    "TEXTCAPTCHA_API_IDENTIFIER": {
+      "required": true,
+      "generator": "secret",
+      "description": "Any string to uniquely identify you to the API at textcaptcha.com (uniquely generated)"
+    },
+    "SECRET_KEY_BASE": {
+      "required": true,
+      "generator": "secret",
+      "description": "used by Rails to verify the integrity of signed cookies"
+    },
+    "RACK_ENV": {
+      "required":true,
+      "value": "production"
+    },
+    "RAILS_ENV": {
+      "required":true,
+      "value": "production"
+    }
+  }
+}
