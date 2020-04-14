@@ -6,7 +6,7 @@ ruby '2.7.1'
 gem 'acts_as_textcaptcha', '~> 4.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.2.1'
+gem 'rails', '~> 6.0.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 1.1.4'
 # Use Puma as the app server
