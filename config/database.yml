@@ -3,8 +3,6 @@ development: &login
   host: localhost
   port: 5432
   database: acts_as_textcaptcha_demo_development
-  username: matt
-  password:
   encoding: utf8
   template: template0
 
