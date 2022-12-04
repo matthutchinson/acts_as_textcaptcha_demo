@@ -2,14 +2,7 @@
 
 An example Rails application configured with the
 [acts_as_textcaptcha](https://github.com/matthutchinson/acts_as_textcaptcha)
-gem, and deployable with Heroku's one-click [deploy
-button](https://devcenter.heroku.com/articles/heroku-button). Use this app to
-play around with configuring the gem in different ways.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy)
-
-Try out a running demo of this app
-[here](https://acts-as-textcaptcha-demo.herokuapp.com/).
+gem.
 
 ### Configuration
 
@@ -20,8 +13,7 @@ file that sets a few options and includes fallback questions (in the event
 of a failed API request).
 
 To identify calls to the API (at [textcaptcha.com](http://textcaptcha.com)) the
-`TEXTCAPTCHA_API_IDENTIFIER` ENV variable must be set. If you are deploying with
-Heroku's one-click button, this will be auto-generated for you.
+`TEXTCAPTCHA_API_IDENTIFIER` ENV variable must be set.
 
 For more information on the
 [acts_as_textcaptcha](https://github.com/matthutchinson/acts_as_textcaptcha) gem
