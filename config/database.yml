@@ -1,15 +1,17 @@
-development: &login
+defaults: &defaults
   adapter: postgresql
-  host: localhost
-  port: 5432
-  database: acts_as_textcaptcha_demo_development
-  encoding: utf8
-  template: template0
+  encoding: unicode
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *login
+development:
+  <<: *defaults
   database: acts_as_textcaptcha_demo_development
-  min_messages: WARNING
+
+test:
+  <<: *defaults
+  database: acts_as_textcaptcha_demo_test
+
+production:
+  <<: *defaults
+  database: acts_as_textcaptcha_demo_production
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
