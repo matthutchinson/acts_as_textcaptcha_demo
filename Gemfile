@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '3.3.3'
+ruby '3.3.6'
 
-gem 'acts_as_textcaptcha', '~> 4.6.0'
+gem 'acts_as_textcaptcha', '~> 4.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
